@@ -33,20 +33,20 @@ async def about(ctx):
 @bot.command()
 async def load(ctx, filename):
     """Load a extension."""
-    bot.load_extension('cmd.{filename[-3]}')
-    await ctx.send('Loaded {filename}.')
+    bot.load_extension(f'cmd.{filename}')
+    await ctx.send(f'Loaded {filename}.')
 
 @bot.command()
 async def unload(ctx, filename):
     """Unload a extension."""
-    bot.unload_extension('cmd.{filename[-3]}')
-    await ctx.send('Unloaded {filename}.')
+    bot.unload_extension(f'cmd.{filename}')
+    await ctx.send(f'Unloaded {filename}.')
 
 @bot.command()
 async def reload(ctx, filename):
     """Reload a extension"""
-    bot.reload_extension('cmd.{filename[-3]}')
-    await ctx.send('Reloaded {filename}.')
+    bot.reload_extension(f'cmd.{filename}')
+    await ctx.send(f'Reloaded {filename}.')
     
 
 bot.run(jdata['TOKEN'])

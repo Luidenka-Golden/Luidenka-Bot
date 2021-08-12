@@ -2,9 +2,9 @@
  A Discord Server Bot made by Luidenka.
 
 ## Features
- Leveling System
- Music System
- Search System
+ - Leveling System
+ - Music System
+ - Search System
 ### Discord Mod-Friendly
  - Detect bad words
  - Mutes someone
